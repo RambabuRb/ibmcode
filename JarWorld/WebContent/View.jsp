@@ -9,6 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 <sql:setDataSource 
    var="dbconnection" user="hr" password="hr"
   driver="oracle.jdbc.OracleDriver" url="jdbc:oracle:thin:@Localhost:1521:xe"/>
@@ -27,7 +28,7 @@ SELECT * FROM employees
    <td><c:out value="${row.phone_number}"/>
    <td><c:out value="${row.hire_date}"/>
   <td><c:out value="${row.salary}"/>
-  
+   <td><c:out value="${row.job_id}"/>
   </tr> 
   </c:forEach>
   </table>
