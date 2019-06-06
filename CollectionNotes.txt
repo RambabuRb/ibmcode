@@ -1,0 +1,231 @@
+			Collecion Framework
+
+			-java.util
+
+			(Collection)
+			(Map)
+			(Interface)
+
+
+			(Collection)
+			     ^
+			     |
+		  	|----|----|
+		      (set)                (List)
+
+
+Collection
+-add()		-addAll()
+-remove()	-removeAll()
+-contains()	-containsAll()
+-size()		-retainAll()
+-isEmpty()
+-clear()
+-iterator()
+-toArray()
+-toArray(T[])
+
+			(Collection)
+			      ^
+			      |
+			    (Set)
+			      ^
+			      |
+		    |---------|--------------------|
+		[HashSet]   [LinkedHashSet]     [TreeSet]
+	
+
+Set
+- Allows only unique elements 
+
+HashSet
+-No Insertion Order
+-No Sorted Order
+-Hashing
+-Advantage
+	-Less Memory
+-Disadvantage
+	-Slow Access
+
+LinkedHashSet
+-Maintains Insertion Order
+-LinkedList alg
+-Advantage
+	-Fast Access
+-Disadvantage
+	-More Memory
+
+TreeSet
+-Maintains Sorted Order
+-Tree for Sorting elements
+-Advantage
+	-Sorted elements
+-Disadvantage
+	-Larger tree, slower insert
+
+					(Collection)
+					    ^
+					    |
+					  (List)
+					    ^
+					    |
+				     |------|------|
+				[ArrayList]	[LinkedList]
+
+List
+-Index based Collection
+-Accepts Duplicates
+-Random Access, Random Insert, Random Delete, Random Update is possible
+-Index based methods
+
+-add(index, e)	-addAll(i, collection)
+-remove(i)
+-get(i)
+-set(i, e)
+-indexOf(e)
+-lastIndexOf(e)
+-subList(from, to)
+-listIterator()
+-listIterator(i)
+
+			(Iterator) Used for all Collection Types
+			     ^
+			     |
+			(ListIterator)   used only for List Types
+
+
+
+Iterator
+-hasNext()
+-next()
+-remove()
+
+ListIterator
+-hasNext()
+-next()
+-hasPrevious()
+-previous()
+
+-add()
+-set()
+-remove()
+
+-nextIndex()
+-previousIndex()
+
+
+
+ArrayList
+-Array
+-Advantage
+	Less Memory useage
+-Disadvantage
+	Random Insert
+	Random Delete
+	is slow, need to move the all elements up and down
+
+LinkedList
+-LinkedList DS
+Advantage
+	Random Insert
+	Random Delete
+	is quick because of LinkedList link modification
+
+Disadvantage
+	More memory consumption
+
+
+Vector
+
+
+
+
+
+
+	key = value ->	Map
+	
+	Key -----> Unique
+	value ---> Can be duplicates
+
+
+			(Map)
+			  ^
+			  |
+	    |-------------|-------------|
+	[HashMap]  [LinkedHashMap] [TreeMap]
+
+
+
+
+Map
+-put(k, v)	-putAll(Map)
+-get(k)
+-remove(k)
+-size()
+-isEmpty()
+-clear()
+-containsKey(k)
+-containsValue(v)
+-keySet()
+-values()
+-entrySet()
+
+
+HashTable
+- Legacy Class introduced in Java 1.0
+- Null-key and Null-Value are not accepted
+- Sync Map
+- InitialCapacity and LoadFactor can be provided
+
+HashMap
+- Null-key and Null-Value are accepted
+
+WeekHashMap
+
+
+
+
+		[Arrays]
+
+java.util
+Arrays
+-sort()
+-binarySearch()
+-fill()
+-copyOf()
+-copyOfRange()
+
+
+		[Collections]
+java.util
+Collections
+-Sort(List)
+-binarySearch(List)
+-synchronizedList()
+-synchronizedSet()
+-synchronizedMap()
+-unmodifiableCollection()
+-unmodifiableList()
+-unmodifiableSet()
+-unmodifiableMap()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
